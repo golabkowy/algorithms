@@ -2,7 +2,7 @@ public class BinarySearch {
 
     static int[] A = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 40, 60, 61, 300, 520, 634, 823, 999};
 
-    public static int binarySearch(int[] A, int wanted) {
+    public static <T extends Comparable> int binarySearch(int[] A, int wanted) {
         int left = 0;
         int right = A.length - 1;
         int index = 0;
